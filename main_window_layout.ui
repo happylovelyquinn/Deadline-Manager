@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Time Mgt Can be Fun 😄</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(221, 237, 238);
+gridline-color: rgb(209, 234, 236);
+font: 13pt &quot;Optima&quot; rgb(127, 127, 127);
+color: rgb(19, 87, 107);</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_overview">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overview</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>390</y>
+      <width>321</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../../.designer/backup/pet.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>691</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,1,0,1">
+       <property name="spacing">
+        <number>11</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_add">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(176, 216, 225);</string>
+         </property>
+         <property name="text">
+          <string>Add Task</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_delete">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(176, 216, 225);</string>
+         </property>
+         <property name="text">
+          <string>Delete Task</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_complete">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(176, 216, 225);</string>
+         </property>
+         <property name="text">
+          <string>Mark as Completed</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QTableWidget" name="tableWidget_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(254, 229, 222);
+selection-background-color: rgb(250, 200, 189);
+</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>15</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Task</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Time Used</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>End</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(220, 239, 254);
+selection-background-color: rgb(179, 215, 247);
+</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>15</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Task</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Time Used</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>End</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QTableWidget" name="tableWidget_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(237, 237, 237);
+selection-background-color: rgb(210, 210, 211);</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>15</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Task</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Time Used</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>End</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QTableWidget" name="tableWidget_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(235, 241, 212);
+selection-background-color: rgb(213, 225, 168);</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>20</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>15</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Task</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Time Used</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>End</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label2">
+         <property name="text">
+          <string>2 (Important &amp; Not Urgent)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label4">
+         <property name="text">
+          <string>4 (Not Important &amp; Not Urgent)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label1">
+         <property name="text">
+          <string>1 (Important &amp; Urgent)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label3">
+         <property name="text">
+          <string>3 (Not Important &amp; Urgent)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_enddate">
+         <property name="text">
+          <string>End date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QDateTimeEdit" name="dateTimeEdit_end">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_task">
+         <property name="text">
+          <string>Task</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_task">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_priority">
+         <property name="text">
+          <string>Priority</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>98</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateTimeEdit" name="dateTimeEdit_start">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_startdate">
+         <property name="text">
+          <string>Start date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QComboBox" name="comboBox_priority">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>1 (Important &amp; Urgent)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2 (Important &amp; Not Urgent)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3 (Not Important &amp; Urgent)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4 (Not Important &amp; Not Urgent)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>78</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_gantt_chart">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>40</y>
+      <width>421</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="toolTip">
+     <string>See more information</string>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionFocus_Matrix"/>
+    <addaction name="actionOverview"/>
+    <addaction name="actionTime_Mgt_Assistant"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionFocus_Matrix">
+   <property name="text">
+    <string>Focus Matrix</string>
+   </property>
+   <property name="toolTip">
+    <string>Tips about how to use the focus matrix</string>
+   </property>
+  </action>
+  <action name="actionOverview">
+   <property name="text">
+    <string>Overview</string>
+   </property>
+   <property name="toolTip">
+    <string>Learn more about how to use the gantt chart in the overview section</string>
+   </property>
+  </action>
+  <action name="actionTime_Mgt_Assistant">
+   <property name="text">
+    <string>Time Mgt Assistant</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

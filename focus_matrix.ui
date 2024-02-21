@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_Focus_Matrix</class>
+ <widget class="QDialog" name="Dialog_Focus_Matrix">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Optima</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Focus Matrix</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Dialog_Focus_Matrix{background-color: qlineargradient(spread:pad, x1:0.01433, y1:0.0343636, x2:0.985222, y2:0.983, stop:0.00985222 rgba(209, 234, 235, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Optima</family>
+     <pointsize>20</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 20pt &quot;Optima&quot;;
+color: rgb(19, 87, 107);</string>
+   </property>
+   <property name="text">
+    <string>The Eisenhower Method</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>461</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Optima</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Optima&quot; rgb(127, 127, 127);
+color: rgb(19, 87, 107);</string>
+   </property>
+   <property name="text">
+    <string>The Eisenhower method helps you organize duties and tasks in order to figure out priorities. You pick an item from your to-do list and ask yourself two questions: &quot;Is it urgent,&quot; and &quot;Is it important?&quot; You can now put the action into the proper quadrant.</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>471</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Optima&quot; rgb(127, 127, 127);
+color: rgb(19, 87, 107);</string>
+   </property>
+   <property name="text">
+    <string>• Urgent and important: 
+Do these, when done, spend time to think about how to deal with the situation in the future. 
+
+• Not Urgent and important: 
+While not urgent, all your available time should go to this quadrant. 
+
+• Urgent and not important: 
+Avoid these as much as possible. 
+When you're interrupted, handle it as fast as possible. 
+
+• Not urgent and not important: 
+Don't do these, if you spend a lot of time here, stop doing it and start spending time in the 'not urgent and important' zone. </string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>430</y>
+     <width>311</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>matrix.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Optima</family>
+     <pointsize>20</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 20pt &quot;Optima&quot;;
+color: rgb(19, 87, 107);</string>
+   </property>
+   <property name="text">
+    <string>Deadline Visualisation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>30</y>
+     <width>431</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Optima&quot; rgb(127, 127, 127);
+color: rgb(19, 87, 107);</string>
+   </property>
+   <property name="text">
+    <string>For each task, as its deadline approaches, the progress bar will continuously update to display how much time you have used and the font of the task description will become increasingly larger and redder. This is to help you visualise how much time you still have and how urgent the task is becoming. In this way, hopefully you can allocate your time more evenly over the time span and complete your coursework progressively instead of leaving things until the last minute 😊
+</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>320</y>
+     <width>481</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>to_do_list.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
